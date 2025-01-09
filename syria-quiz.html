@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اختبار حول تاريخ الجمهورية العربية السورية</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .question {
+            margin-bottom: 20px;
+        }
+        .question p {
+            font-size: 18px;
+        }
+        .answers {
+            margin-left: 20px;
+        }
+        .answers label {
+            display: block;
+            margin-bottom: 10px;
+        }
+        .answers input[type="radio"] {
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            border: 2px solid #ccc;
+            border-radius: 4px;
+            margin-right: 10px;
+            position: relative;
+            top: 5px;
+            cursor: pointer;
+        }
+        .answers input[type="radio"]:checked {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+        .submit-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        .submit-btn:hover {
+            background-color: #0056b3;
+        }
+        .result {
+            margin-top: 20px;
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>اختبار حول تاريخ الجمهورية العربية السورية</h1>
+        <form id="quiz-form">
+            <div class="question">
+                <p>1. ما هي عاصمة الجمهورية العربية السورية؟</p>
+                <div class="answers">
+                    <label><input type="radio" name="q1" value="A"> حلب</label>
+                    <label><input type="radio" name="q1" value="B"> دمشق</label>
+                    <label><input type="radio" name="q1" value="C"> حمص</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>2. من كان أول رئيس للجمهورية السورية؟</p>
+                <div class="answers">
+                    <label><input type="radio" name="q2" value="A"> شكري القوتلي</label>
+                    <label><input type="radio" name="q2" value="B"> هاشم الأتاسي</label>
+                    <label><input type="radio" name="q2" value="C"> فارس الخوري</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>3. متى تم إعلان الاستقلال الكامل لسوريا عن الاحتلال الفرنسي؟</p>
+                <div class="answers">
+                    <label><input type="radio" name="q3" value="A"> 1941</label>
+                    <label><input type="radio" name="q3" value="B"> 1946</label>
+                    <label><input type="radio" name="q3" value="C"> 1950</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>4. ما هو النظام السياسي الحالي في سوريا؟</p>
+                <div class="answers">
+                    <label><input type="radio" name="q4" value="A"> نظام برلماني</label>
+                    <label><input type="radio" name="q4" value="B"> نظام رئاسي</label>
+                    <label><input type="radio" name="q4" value="C"> نظام ملكي</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>5. متى تم اعتماد الدستور السوري الحالي؟</p>
+                <div class="answers">
+                    <label><input type="radio" name="q5" value="A"> 2012</label>
+                    <label><input type="radio" name="q5" value="B"> 2000</label>
+                    <label><input type="radio" name="q5" value="C"> 1973</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>6. ما هو عدد أعضاء مجلس الشعب السوري؟</p>
+                <div class="answers">
+                    <label><input type="radio" name="q6" value="A"> 200</label>
+                    <label><input type="radio" name="q6" value="B"> 250</label>
+                    <label><input type="radio" name="q6" value="C"> 300</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>7. ما هو الاسم الرسمي لسوريا في الأمم المتحدة؟</p>
+                <div class="answers">
+                    <label><input type="radio" name="q7" value="A"> الجمهورية السورية</label>
+                    <label><input type="radio" name="q7" value="B"> الجمهورية العربية السورية</label>
+                    <label><input type="radio" name="q7" value="C"> سوريا</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>8. من كان الرئيس السوري خلال حرب أكتوبر 1973؟</p>
+                <div class="answers">
+                    <label><input type="radio" name="q8" value="A"> حافظ الأسد</label>
+                    <label><input type="radio" name="q8" value="B"> شكري القوتلي</label>
+                    <label><input type="radio" name="q8" value="C"> أديب الشيشكلي</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>9. متى تم إعلان الجمهورية العربية المتحدة بين سوريا ومصر؟</p>
+                <div class="answers">
+                    <label><input type="radio" name="q9" value="A"> 1958</label>
+                    <label><input type="radio" name="q9" value="B"> 1960</label>
+                    <label><input type="radio" name="q9" value="C"> 1955</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>10. ما هو رمز العلم السوري عند الاستقلال؟</p>
+                <div class="answers">
+                    <label><input type="radio" name="q10" value="A"> ثلاث نجوم</label>
+                    <label><input type="radio" name="q10" value="B"> نجمتان</label>
+                    <label><input type="radio" name="q10" value="C"> نجمة واحدة</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>11. كم انقلاباً عسكرياً حدث في سوريا؟</p>
+                <div class="answers">
+                    <label><input type="radio" name="q11" value="A"> 5</label>
+                    <label><input type="radio" name="q11" value="B"> 7</label>
+                    <label><input type="radio" name="q11" value="C"> 9</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>12. كم مدة ولاية الرئيس في سوريا حسب الدستور الحالي؟</p>
+                <div class="answers">
+                    <label><input type="radio" name="q12" value="A"> 4 سنوات</label>
+                    <label><input type="radio" name="q12" value="B"> 7 سنوات</label>
+                    <label><input type="radio" name="q12" value="C"> 10 سنوات</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>13. متى بدأت الثورة السورية؟</p>
+                <div class="answers">
+                    <label><input type="radio" name="q13" value="A"> 2010</label>
+                    <label><input type="radio" name="q13" value="B"> 2011</label>
+                    <label><input type="radio" name="q13" value="C"> 2012</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>14. ما هو أهم مصدر اقتصادي لسوريا قبل عام 2011؟</p>
+                <div class="answers">
+                    <label><input type="radio" name="q14" value="A"> النفط</label>
+                    <label><input type="radio" name="q14" value="B"> الزراعة</label>
+                    <label><input type="radio" name="q14" value="C"> الصناعة</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>15. أي مدينة سورية تعتبر المركز الثقافي لسوريا؟</p>
+                <div class="answers">
+                    <label><input type="radio" name="q15" value="A"> دمشق</label>
+                    <label><input type="radio" name="q15" value="B"> حلب</label>
+                    <label><input type="radio" name="q15" value="C"> حمص</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>16. من هو أول رئيس وزراء في سوريا بعد الاستقلال؟</p>
+                <div class="answers">
+                    <label><input type="radio" name="q16" value="A"> فارس الخوري</label>
+                    <label><input type="radio" name="q16" value="B"> جميل مردم</label>
+                    <label><input type="radio" name="q16" value="C"> خالد العظم</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>17. ما هو الحزب الحاكم في سوريا منذ عام 1963؟</p>
+                <div class="answers">
+                    <label><input type="radio" name="q17" value="A"> الحزب الشيوعي</label>
+                    <label><input type="radio" name="q17" value="B"> حزب البعث</label>
+                    <label><input type="radio" name="q17" value="C"> الحزب القومي الاجتماعي</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>18. متى تم إنشاء مجلس الشعب السوري؟</p>
+                <div class="answers">
+                    <label><input type="radio" name="q18" value="A"> 1971</label>
+                    <label><input type="radio" name="q18" value="B"> 1973</label>
+                    <label><input type="radio" name="q18" value="C"> 1980</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>19. من هو مؤسس الجيش السوري الحر؟</p>
+                <div class="answers">
+                    <label><input type="radio" name="q19" value="A"> رياض الأسعد</label>
+                    <label><input type="radio" name="q19" value="B"> مصطفى طلاس</label>
+                    <label><input type="radio" name="q19" value="C"> عبد الرحمن شحادة</label>
+                </div>
+            </div>
+            <div class="question">
+                <p>20. كم برميل نفط بلغ إنتاج سوريا في اليوم قبل اندلاع الثورة عام 2011؟</p>
+                <div class="answers">
+                    <label><input type="radio" name="q20" value="A"> 300 ألف</label>
+                    <label><input type="radio" name="q20" value="B"> 380 ألف</label>
+                    <label><input type="radio" name="q20" value="C"> 500 ألف</label>
+                </div>
+            </div>
+
+            <button type="button" class="submit-btn" onclick="calculateScore()">إرسال</button>
+            <div id="result" class="result"></div>
+        </form>
+    </div>
+
+    <script>
+        const correctAnswers = {
+            q1: "B",
+            q2: "A",
+            q3: "B",
+            q4: "B",
+            q5: "A",
+            q6: "B",
+            q7: "B",
+            q8: "A",
+            q9: "A",
+            q10: "A",
+            q11: "B",
+            q12: "B",
+            q13: "B",
+            q14: "A",
+            q15: "A",
+            q16: "A",
+            q17: "B",
+            q18: "B",
+            q19: "A",
+            q20: "B"
+        };
+
+        function calculateScore() {
+            const form = document.getElementById('quiz-form');
+            const resultDiv = document.getElementById('result');
+            let score = 0;
+            let explanations = "";
+
+            Object.keys(correctAnswers).forEach((question) => {
+                const selected = form.querySelector(`input[name="${question}"]:checked`);
+                if (selected) {
+                    if (selected.value === correctAnswers[question]) {
+                        score += 5;
+                        explanations += `<p>السؤال ${question[1]}: إجابة صحيحة!</p>`;
+                    } else {
+                        explanations += `<p>السؤال ${question[1]}: إجابة خاطئة. الإجابة الصحيحة هي ${correctAnswers[question]}.</p>`;
+                    }
+                } else {
+                    explanations += `<p>السؤال ${question[1]}: لم يتم اختيار إجابة. الإجابة الصحيحة هي ${correctAnswers[question]}.</p>`;
+                }
+            });
+
+            let knowledgeLevel = "ضعيف";
+            if (score >= 70) {
+                knowledgeLevel = "جيد";
+            } else if (score >= 40) {
+                knowledgeLevel = "متوسط";
+            }
+
+            resultDiv.innerHTML = `<p>درجتك هي ${score} من 100. مستواك: ${knowledgeLevel}.</p>` + explanations;
+        }
+    </script>
+</body>
+</html>
